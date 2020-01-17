@@ -1,0 +1,6 @@
+---
+- name: Install dependencies, docker etc. 
+  hosts: dockerhosts
+  become: yes
+  roles:
+    - docker
