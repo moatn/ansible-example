@@ -5,7 +5,6 @@ Prerequisites:
 
 	- Software like Virtualbox/ VMware or KVM
 	- Ubuntu 18.04 iso
-	- 
 
 
 > Keep in mind, these are just examples of Ansible. 
