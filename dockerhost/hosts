@@ -3,5 +3,5 @@ ansible_connection=ssh
 ansible_user=bob
 
 [dockerhosts]
-192.168.115.186
-192.168.115.187
+<ip>
+<ip>
