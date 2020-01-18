@@ -1,0 +1,12 @@
+---
+- name: Prerequisites
+  apt:
+    name:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - software-properties-common
+      - postfix
+      - debian-archive-keyring
+    state: present
+  become: true

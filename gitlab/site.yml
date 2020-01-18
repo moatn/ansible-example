@@ -1,0 +1,8 @@
+---
+- name: Gitlab Ansible deployment
+  hosts: gitlab
+  become: yes
+  roles:
+    - common
+    - docker
+    - gitlab 

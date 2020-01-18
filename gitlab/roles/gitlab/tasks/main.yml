@@ -1,0 +1,26 @@
+---
+- name: add gitlab gpg key
+  apt_key:
+    url: https://packages.gitlab.com/gpg.key
+    id: 1A4C919DB987D435939638B914219A96E15E78F4
+    state: present
+
+- name: add Gitlab repository
+  apt_repository:
+    repo: deb https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu/ bionic main
+    state: present
+    update_cache: yes
+
+- name: add Gitlab repository
+  apt_repository:
+    repo: deb-src https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu/ bionic main
+    state: present
+    update_cache: yes
+
+- name: install gitlab-ce
+  apt:
+    name: 
+      - gitlab-ce
+    state: present
+    update_cache: yes
+  become: true
